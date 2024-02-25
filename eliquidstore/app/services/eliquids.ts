@@ -5,13 +5,13 @@ export interface EliquidRequest {
 }
 
 export const getAllEliquids = async () => {
-    const response = await fetch("http://localhost:5151/Eliquids");
+    const response = await fetch(`http://localhost:5151/Eliquids`);
 
     return response.json();
 }
 
 export const createEliquid = async (eliquidrequest: EliquidRequest) => {
-    await fetch("http://localhost:5151/Eliquids", {
+    await fetch(`http://localhost:5151/Eliquids`, {
         method: "POST",
         headers: {
             "content-type": "application/json",

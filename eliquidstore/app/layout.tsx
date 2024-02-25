@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const items = [
   { key: "home", label: <Link href={"/"}>E-liquid Store</Link>},
-  { key: "eliquids", label: <Link href={"/"}>Жижы</Link>},
+  { key: "eliquids", label: <Link href={"/eliquids"}>Жижы</Link>},
 ];
 
 export default function RootLayout({

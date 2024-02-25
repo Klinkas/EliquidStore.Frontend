@@ -4,7 +4,7 @@ interface Props {
     capacity: number;
 }
 
-export const Cardname = ({name, flavor, capacity}: Props) => {
+export const CardName = ({name, flavor, capacity}: Props) => {
     return (
         <div style={{
             display: "flex",

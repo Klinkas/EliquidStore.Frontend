@@ -50,17 +50,17 @@ export const CreateUpdateEliquid = ({
             <div className="eliquid__modal">
                 <Input 
                     value={name}
-                    onChange={(e) => setName(e.Target.value)}
+                    onChange={(e) => setName(e.target.value)}
                     placeholder="Название"/>
                 <Input 
                     value={flavor}
-                    onChange={(e) => setFlavor(e.Target.value)}
+                    onChange={(e) => setFlavor(e.target.value)}
                     placeholder="Вкус"/>
                 <Input 
                     value={capacity}
-                    onChange={(e) => setCapacity(e.Target.value)}
+                    onChange={(e) => setCapacity(e.target.value)}
                     placeholder="Объем"/>
             </div>
         </Modal>
-    )
-}
+    );
+};

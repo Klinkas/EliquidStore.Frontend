@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 
 interface Props {
     mode: Mode;
-    values: Eliquid[];
+    values: Eliquid;
     isModalOpen: boolean;
     handleCancel: () => void;
-    handleCreate: () => (request: EliquidRequest) => void;
-    handleUpdate: () => (id: string, request: EliquidRequest) => void;
+    handleCreate: (request: EliquidRequest) => void;
+    handleUpdate: (id: string, request: EliquidRequest) => void;
 }
 
 export enum Mode {
@@ -38,7 +38,7 @@ export const CreateUpdateEliquid = ({
     const handleOnOk = async () => {
         const eliquidRequest = {name, flavor, capacity};
 
-        mode == Mode.Create ? handleCreate(eliquidRequest) : handleUpdate(values., eliquidRequest);
+        mode == Mode.Create ? handleCreate(eliquidRequest) : handleUpdate(values.id, eliquidRequest);
     };
 
     return (

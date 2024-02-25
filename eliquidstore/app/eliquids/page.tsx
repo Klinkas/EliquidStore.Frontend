@@ -75,7 +75,7 @@ export default function EliquidsPage() {
 
     return (
         <div>
-            <Button>Добавить жижу</Button>
+            <Button type="primary" style={{marginTip: "30px"}} size="large" onClick={openModal}>Добавить жижу</Button>
 
             <CreateUpdateEliquid mode={mode} values={values}
             isModalOpen={isModalOpen} handleCreate={handleCreateEliquid}
